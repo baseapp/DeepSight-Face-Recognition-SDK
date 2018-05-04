@@ -2,6 +2,8 @@
 
 Deepsight Face is a binary SDK that runs as an HTTP service.  It encapsulates Deep learning models for face detection, gender/age classification, face recognition and provides a REST api for easy inference.  Each model is a separate plugin that can be upgraded as new updates are pushed.  
 
+![deepsight](https://j.gifs.com/Xo23k8.gif)
+
 Since all inference is made offline, there are no limits on the number of API hits.
 
 This repository consists of a collection of example programs written in python demonstrating the capabilities of the SDK.
