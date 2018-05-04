@@ -46,6 +46,8 @@ The setup package installs necessary dependencies.  However, in case that didn't
 4. Press the space bar to read the EULA and enter `y` to accept it
 5. Continue through the prompt until extraction is complete.
 
+![linux installation](https://github.com/baseapp/DeepSight-Face-Recognition-SDK/blob/master/linux_install.gif)
+
 #### Install Dependencies
 
 Deepsight on `Linux` requires the [OpenBLAS](http://www.openblas.net/) library.  It should be available in your distribution repository.
