@@ -37,6 +37,6 @@ optional arguments:
   --h [H]      Set video height
 ```
 
-* `scale` arg tells how many times the image should be doubled in size.  This helps in detecting smaller faces.
-* `det` arg tells which detector to use.  MMOD is more accurate but slow, YOLO is fast but has some false positives, HOG is fast for a CPU only system.  Default is MMOD.
-* `src` arg points to the image.
+* `enroll` arg is used enroll new faces.  In non-enroll mode, new faces are shown as unknown and not marked in the register
+* `w` and `h` can be used to set video size
+* `src` arg points to the camera, default is 0 for webcam
