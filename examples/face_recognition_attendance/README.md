@@ -19,6 +19,7 @@ pip install scipy
 * Then run the application again as `python3 attendance.py` without `enroll` for marking attendance.
 * The application will automatically log faces.  If the same face keeps appearing, it will wait a minute before marking it again.
 * The application simply saves a time register in a json file called `att_log`
+* Enrolled faces are stored in a folder `dbimg/` and its subtree
 
 ### Usage
 
