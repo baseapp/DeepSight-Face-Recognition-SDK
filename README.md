@@ -28,6 +28,15 @@ The setup package installs necessary dependencies.  However, in case that didn't
 1. VC++ 2017 Runtime (`vc_redist.x64.exe`)
 1. Intel MKL BLAS Runtime  (`c_wproc*.exe`)
 
+#### Install CUDA (GPU Version)
+
+For GPU version of the SDK, you must download and install CUDA
+
+1. Download **CUDA Toolkit 9.0 (Sept 2017) for 64-bit Windows 10** from [Nvidia's website](https://developer.nvidia.com/cuda-toolkit-archive)
+2. Run the installation.  If installation fails, disable `Visual Studio Integration` in the installer options and try again.
+3. Download **cuDNN v7.0.5 (Dec 5, 2017), for CUDA 9.0 for 64-bit Windows 10** from [Nvidia's cuDNN Website](https://developer.nvidia.com/rdp/cudnn-archive).  If necessary signup for a developer account.
+4. Extract the zip archive to the `NVIDIA GPU Computing Toolkit\CUDA\` folder and merge with folders from the archive.
+
 #### Run
 
 1. The setup should've created start menu links. Launch `Deepsight Face` from the start menu link. (or `dsFace.exe` from the installed folder)
@@ -57,6 +66,16 @@ Deepsight on `Linux` requires the [OpenBLAS](http://www.openblas.net/) library. 
 sudo apt-get update
 sudo apt-get install libopenblas-dev
 ```
+
+#### Install CUDA (GPU Version)
+
+For GPU version of the SDK, you must download and install CUDA
+
+1. Download **CUDA Toolkit 8.0 GA2 (Feb 2017) for x86_64 Linux** from [Nvidia's website](https://developer.nvidia.com/cuda-toolkit-archive)
+2. Perform the installation.
+3. Download **cuDNN v5 (May 27, 2016), for CUDA 8.0 for 64 bit Linux** from [Nvidia's cuDNN Website](https://developer.nvidia.com/rdp/cudnn-archive).  If necessary signup for a developer account.
+4. Extract the zip archive to the `/usr/local/cuda/` folder and merge with folders from the archive.
+
 
 #### Run
 
