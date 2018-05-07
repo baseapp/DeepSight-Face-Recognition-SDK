@@ -74,7 +74,8 @@ For GPU version of the SDK, you must download and install CUDA
 1. Download **CUDA Toolkit 8.0 GA2 (Feb 2017) for x86_64 Linux** from [Nvidia's website](https://developer.nvidia.com/cuda-toolkit-archive)
 2. Perform the installation.
 3. Download **cuDNN v5 (May 27, 2016), for CUDA 8.0 for 64 bit Linux** from [Nvidia's cuDNN Website](https://developer.nvidia.com/rdp/cudnn-archive).  If necessary signup for a developer account.
-4. Extract the zip archive to the `/usr/local/cuda/` folder and merge with folders from the archive.
+4. Extract the zip archive to the `/usr/local/cuda-8.0/` folder and merge with folders from the archive.
+5. Make sure to update the `PATH` with `/usr/local/cuda-8.0/bin` and `LD_LIBRARY_PATH` with `/usr/local/cuda-8.0/lib64`
 
 
 #### Run
