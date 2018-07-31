@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% block extrahead %}
+<meta property="og:image" content="http://localhost:5000/static/gen/{{imgpath}}" />
+<meta property="og:url" content="http://localhost:5000/" />
+<meta property="og:title" content="Which FIFA Celeb Do You Look Like?" />
+<meta property="og:description" content="Hey guys! Check this out, I look like {{name}} according to description" />
+{% endblock extrahead %}
+{% block content %}
+
+<div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-sm bd-highlight text-center align-self-center">
+                <img src="{{imgpath}}" alt="player" class="img-thumbnail" id="player">
+                <br>
+                <div id="plname">Congratulations! You look like {{ name }}</div>
+                <br>
+                <a href="{{imgpath}}" id="downloadBtn" type="button" class="btn btn-success" download>Download Now</a>
+            </div>
+    </div>
+</div>
+
+{% endblock %}

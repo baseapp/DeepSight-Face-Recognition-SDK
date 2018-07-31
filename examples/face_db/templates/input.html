@@ -1,0 +1,56 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container-fluid h-100">
+        <div class="row h-100">
+            <div class="col-sm p-1 text-center align-self-center">
+                <img src="http://via.placeholder.com/300x300" alt="preview" class="img-thumbnail" id="preview" height="300" width="300">
+                <form method="post" action="/result" enctype="multipart/form-data" >
+                    <div class="form-group">
+                        <label for="face">Upload Face</label>
+                        <input type="file" class="form-control-file" name="face" id="face">
+                    </div>
+                    <input type="submit"/>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+       function handleFileSelect(evt) {
+            var files = evt.target.files;
+
+            // Loop through the FileList and render image files as thumbnails.
+            for (var i = 0, f; f = files[i]; i++) {
+
+            // Only process image files.
+            if (!f.type.match('image.*')) {
+                continue;
+            }
+
+            var reader = new FileReader();
+
+            // Closure to capture the file information.
+            reader.onload = (function(theFile) {
+                return function(e) {
+                // Render thumbnail.
+                // var span = document.createElement('span');
+                // span.innerHTML = 
+                // [
+                //     '<img style="height: 75px; border: 1px solid #000; margin: 5px" src="', 
+                //     e.target.result,
+                //     '" title="', escape(theFile.name), 
+                //     '"/>'
+                // ].join('');
+                
+                document.getElementById('preview').src = e.target.result;
+                };
+            })(f);
+
+            // Read in the image file as a data URL.
+            reader.readAsDataURL(f);
+            }
+        }
+
+        document.getElementById('face').addEventListener('change', handleFileSelect, false);
+    </script>
+{% endblock %}
