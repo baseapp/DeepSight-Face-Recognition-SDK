@@ -1,4 +1,10 @@
-This example demonstrates usage of FaceDB to query an embedding from a DB.  Please go through code to understand FaceDB usage.
+**Introducing FaceDB** - powered by Facebook Research's Search Similarity library, facedb is a binary that runs as a http service.  It stores embeddings in the millions and allows for searching the closest matching embedding within a second.
+
+**What does it mean?**
+
+It means that you can use FaceDB to query a face from a database of Million faces and expect results within a second.  This allows for highy scalable applications with an extremely easy to use API.
+
+This example demonstrates usage of FaceDB to query an embedding from a DB of 50 faces of FIFA celebrities.  Please go through code to understand FaceDB usage.
 
 > This example only works in Linux.  FaceDB is currently not available for Windows.  
 
